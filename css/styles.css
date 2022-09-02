@@ -127,6 +127,9 @@ p {
   letter-spacing: 0.02em;
   color: var(--font-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .link::after {
@@ -138,26 +141,21 @@ p {
   height: 4px;
   width: 100%;
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .link:hover,
 .link:focus,
 .link.active {
   color: var(--brand-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .link:hover::after,
 .link:focus::after,
 .link.active::after {
   background-color: var(--brand-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .header-contact {
@@ -170,6 +168,9 @@ p {
   display: flex;
   align-items: center;
   fill: var(--text-color);
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .mail {
@@ -182,10 +183,6 @@ p {
 .header-contact:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .tel {
@@ -252,15 +249,14 @@ p {
   color: var(--main-color);
   border: none;
   padding: 10px 32px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--btn-hover-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .btn {
@@ -268,6 +264,9 @@ p {
   color: var(--font-color);
   border: none;
   padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .btn:hover,
@@ -275,10 +274,6 @@ p {
   background-color: var(--brand-color);
   color: var(--main-color);
   box-shadow: var(--btn-shadow);
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 /* Sections */
@@ -299,12 +294,13 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--bg-work-title);
 }
 
@@ -427,16 +423,15 @@ p {
   background-color: var(--main-color);
   border-radius: 50%;
   fill: var(--client-color);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .social:hover,
 .social:focus {
   background-color: var(--brand-color);
   fill: var(--main-color);
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .icon {
@@ -465,6 +460,9 @@ p {
   align-items: center;
   border: 1px solid var(--client-color);
   border-radius: 4px;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .client-logo {
@@ -476,10 +474,6 @@ p {
 .client:focus {
   border: 1px solid var(--brand-color);
   fill: var(--brand-color);
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 /* Projects */
@@ -513,10 +507,6 @@ p {
 .list-item-project a:hover .project-card,
 .list-item-project a:focus .project-card {
   box-shadow: var(--project-shadow);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .list-project {
@@ -531,6 +521,9 @@ p {
   width: 370px;
   list-style: none;
   padding: 0;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .card-top {
@@ -550,16 +543,15 @@ p {
   letter-spacing: 0.03em;
   color: var(--main-color);
   background-color: var(--card-description-color);
+  transition-property: transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .list-item-project a:hover .card-description,
 .list-item-project a:focus .card-description {
   transform: translateY(0);
   box-shadow: none;
-  transition-property: transform, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 img {
@@ -618,6 +610,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-contact {
@@ -627,24 +622,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .map:hover,
 .map:focus {
   color: var(--brand-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--brand-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .footer-list {
@@ -694,16 +684,15 @@ img {
   width: 44px;
   height: 44px;
   fill: var(--main-color);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .social-footer:hover,
 .social-footer:focus {
   background-color: var(--brand-color);
   fill: var(--main-color);
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 /* Modal window */
@@ -720,7 +709,6 @@ img {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-  transition-delay: 0;
 }
 
 .backdrop.is-hidden {
@@ -742,8 +730,7 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-  transition-delay: 0;
-
+  
   width: 528px;
   height: 581px;
   border-radius: 4px;
@@ -764,4 +751,5 @@ img {
   padding: 0;
   background-color: var(--main-color);
   box-shadow: var(--close-shadow);
+  cursor: pointer;
 }
